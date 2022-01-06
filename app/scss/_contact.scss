@@ -1,0 +1,75 @@
+.contact{
+
+    background: 
+    linear-gradient(
+        to left, 
+        rgba($tertiary-color, 0.9),
+        rgba($tertiary-color, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1572914339498-35b974d7c261?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80") bottom;
+    background-size: cover;
+    //source: https://unsplash.com/photos/tZtibz-nC2g
+    height: 30.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include breakpoint-up(medium){
+        height: 100vh;
+    }
+
+    &_header{
+        font-size: $font-lg;
+        text-align: center;
+
+        @include breakpoint-up(medium){
+            font-size: $font-xlg;
+        }
+    }
+
+    &_socials{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1rem 3rem;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 3rem;
+        padding-bottom: 3rem;
+        border-bottom: 0.1rem solid $primary-color;
+
+        @include breakpoint-up(medium){
+            flex-direction: row;
+        }
+        
+        a{
+            color: $black;
+            text-align: center;
+            font-weight: bold;
+            &:hover{
+                color: $primary-color;
+                opacity: 0.75;
+            }
+        }
+    }
+
+    &_social{
+        display: flex;
+        width: 10rem;
+        gap: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &_resume{
+        text-align: center;
+        margin: 0.5rem auto;
+        padding: 1rem;
+        border: 0.1rem solid $primary-color;
+        font-weight: bold;
+
+        &:hover{
+            opacity: 0.75;
+        }
+    }
+}

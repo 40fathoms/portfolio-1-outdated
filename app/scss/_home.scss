@@ -1,0 +1,24 @@
+.home{
+
+    text-align: center;
+    height: 100vh;
+    display: flex;
+
+    &_text{
+        margin: auto auto;
+    }
+
+    h1{
+        font-size: $font-xlg;
+
+        span{
+            font-weight: bold;
+            color: $primary-color;
+        }
+    }
+
+    h2{
+        font-size: $font-lg;
+    }
+    
+}

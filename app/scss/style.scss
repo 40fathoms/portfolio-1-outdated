@@ -1,0 +1,23 @@
+@import "variables";
+@import "mixins";
+
+@import "config"; 
+@import "nav";
+@import "home";
+@import "about";
+@import "projects";
+@import "contact";
+
+*{
+    //margin-top: 2.83rem;
+    @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+    font-family: 'Public Sans', sans-serif;
+}
+
+body{
+    background-color: $secondary-color;
+
+    &.mobile{
+        overflow: hidden;
+    }
+}

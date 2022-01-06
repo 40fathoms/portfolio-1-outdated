@@ -1,0 +1,100 @@
+.projects{
+
+    background-color: $tertiary-color;
+    padding: 3rem 0;
+    
+    &_header{
+        text-align: center;
+        font-size: $font-xlg;
+    }
+
+    &_grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 1rem;
+        gap: 1.5rem;
+
+        @include breakpoint-down(medium){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint-down(small){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &_image{
+        width: auto;
+        height: 13rem;
+        border: 0.1rem solid $primary-color;
+        box-shadow: 0.1rem 0.1rem $black;
+
+        display: grid;
+
+        transition: all 300ms ease-in-out;
+        background-position: center center;
+        background-size: cover;
+        
+        @include breakpoint-up(medium){
+            &:hover{
+                background-color: rgba($primary-color, 0.5);
+                background-image: none !important;
+                .projects_button{
+                    visibility: visible;
+                }
+            }
+        }
+
+        &.active{
+            background-image: none !important;
+            background-color: rgba($primary-color, 0.5);
+            
+            .projects_button{
+                visibility: visible;
+            }
+        }
+    }
+
+    &_buttons{
+        color: #000;
+        width: 100.7%;
+        align-self: center;
+        display:flex;
+        justify-content: space-evenly;       
+    }
+
+    &_button{
+        color: #000;
+        visibility: hidden;
+        padding: 0.5rem 0;
+        
+        &:hover{
+            color: $secondary-color;
+        }
+    }
+
+    &_title{       
+        font-weight: bold;
+        font-size: $font-med;
+        width: 100.7%;
+        padding: 0.5rem 0;
+        text-align: start;
+    }
+
+    &_tools{
+        display: flex;
+        gap: 0.5rem;
+        font-size: small;
+    }
+
+    &_tool{
+        border: 0.1rem solid $primary-color;
+        padding: 0.1rem 0.5rem;
+        color: $black;
+        font-weight: bold;
+    }
+
+    &_description{
+        text-align: justify;
+    }
+}
