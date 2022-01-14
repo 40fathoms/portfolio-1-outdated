@@ -1,3 +1,77 @@
+// Assigning the JSON file to a variable
+
+    
+let language = document.getElementsByTagName("select")
+
+// Picking the json file according to the browser's language
+if(language[0].value=="projects_en.html"){
+    var jsonFile = (function () {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'global': false,
+            'url': 'projects.json',
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+      })(); 
+}
+else{
+    var jsonFile = (function () {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'global': false,
+            'url': 'projetos.json',
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+      })(); 
+}
+
+// Reading the JSON file and appending it to the projects grid
+
+jsonFile.forEach(item => {
+
+    //Adding the tools used for each project
+    var toolsUsed = ``
+    item.tools.forEach(tool => {
+        toolsUsed+=`<div class="projects_tool">${tool}</div>`
+    })
+
+    // Writing the project_item HTML
+    $(".projects_grid").append(
+
+    `<div class="projects_item">     
+        <div class="projects_image" style="background-image: url('${item.background}');">
+            <div class="projects_buttons">
+            
+                <a href="${item.liveSite}" target="_blank" class="projects_button">
+                    <i class="fas fa-eye fa-2x"></i>
+                </a> 
+                <a href="${item.repository}" target="_blank" class="projects_button">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="projects_title">${item.title}</div>
+        <div class="projects_tools">
+            ${toolsUsed}
+    </div>`  
+)
+})
+
+
+// Mobile navbar button
+
 const navbarVisible = document.querySelector(".navbar");
 const hamburger = document.querySelector(".navbar-mobile_hamburger");
 const body = document.querySelector("#body");
@@ -15,6 +89,8 @@ hamburger.addEventListener("click", function(){
 
 ///////////////////////
 
+// Projects hover links
+
 const project = document.querySelectorAll(".projects_image");
 
 project.forEach(item => item.addEventListener("click", function(){
@@ -25,3 +101,4 @@ project.forEach(item => item.addEventListener("click", function(){
         item.classList.add("active");
     }
 }))
+

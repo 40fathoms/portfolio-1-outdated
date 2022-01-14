@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Time Tracking Dashboard",
+        "background": "./images/timeTracking.jpg",
+        "liveSite": "https://40fathoms.github.io/time-tracking-dashboard",
+        "repository": "https://github.com/40fathoms/time-tracking-dashboard",
+        
+        "tools": ["HTML", "CSS/SASS", "JavaScript", "jQuery"]
+    },
+
+    {
+        "title": "Insure Landing Page",
+        "background": "./images/insureLandingPage.jpg",
+        "liveSite": "https://40fathoms.github.io/insure-landing-page",
+        "repository": "https://github.com/40fathoms/insure-landing-page",
+        
+        "tools": ["HTML", "CSS/SASS", "JavaScript"]
+    },
+
+    {
+        "title": "Loopstudios Landing Page",
+        "background": "./images/loopstudiosLandingPage.jpg",
+        "liveSite": "https://40fathoms.github.io/frontend-mentor-loopstudios-landing-page",
+        "repository": "https://github.com/40fathoms/frontend-mentor-loopstudios-landing-page",
+        
+        "tools": ["HTML", "CSS/SASS", "JavaScript"]
+    },
+
+    {
+        "title": "Nano Landing Page",
+        "background": "./images/productLanding.png",
+        "liveSite": "https://40fathoms.github.io/fcc-product-landing-lage",
+        "repository": "https://github.com/40fathoms/fcc-product-landing-lage",
+        
+        "tools": ["HTML", "CSS/SASS", "JavaScript"]
+    },
+
+    {
+        "title": "Technical Documentation",
+        "background": "./images/documentation.png",
+        "liveSite": "https://40fathoms.github.io/fcc-HTML-technical-documentation",
+        "repository": "https://github.com/40fathoms/fcc-HTML-technical-documentation",
+        
+        "tools": ["HTML", "CSS/SASS", "JavaScript"]
+    },
+
+    {
+        "title": "Survey Form",
+        "background": "./images/survey.png",
+        "liveSite": "https://40fathoms.github.io/fcc-survey-form",
+        "repository": "https://github.com/40fathoms/fcc-survey-form",
+        
+        "tools": ["HTML", "CSS/SASS", "JavaScript"]
+    },
+
+    {
+        "title": "Tribute Page",
+        "background": "./images/tribute.png",
+        "liveSite": "https://40fathoms.github.io/fcc-tribute-page",
+        "repository": "https://github.com/40fathoms/fcc-tribute-page",
+        
+        "tools": ["HTML", "CSS/SASS", "JavaScript"]
+    }
+ 
+]
