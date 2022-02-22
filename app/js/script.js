@@ -1,51 +1,36 @@
 // Assigning the JSON file to a variable
 
-    
-let language = document.getElementsByTagName("select")
+let jsonFile = (function () {
+    var json = null;
+    $.ajax({
+        'async': false,
+        'global': false,
+        'url': 'projects.json',
+        'dataType': "json",
+        'success': function (data) {
+            json = data;
+        }
+    });
+    return json;
+  })(); 
 
-// Picking the json file according to the browser's language
-if(language[0].value=="projects_en.html"){
-    var jsonFile = (function () {
-        var json = null;
-        $.ajax({
-            'async': false,
-            'global': false,
-            'url': 'projects.json',
-            'dataType': "json",
-            'success': function (data) {
-                json = data;
-            }
-        });
-        return json;
-      })(); 
-}
-else{
-    var jsonFile = (function () {
-        var json = null;
-        $.ajax({
-            'async': false,
-            'global': false,
-            'url': 'projetos.json',
-            'dataType': "json",
-            'success': function (data) {
-                json = data;
-            }
-        });
-        return json;
-      })(); 
-}
-
-// Reading the JSON file and appending it to the projects grid
+  
+// Reading the JSON data and appending it to the projects grid
 
 jsonFile.forEach(item => {
 
+    // Selecting the title language
+    let language = document.getElementsByTagName("select");
+    let title = ``;
+    (language[0].value == "projects_en.html") ? title=item.title_en : title=item.title_pt;
+
     //Adding the tools used for each project
-    var toolsUsed = ``
+    let toolsUsed = ``
     item.tools.forEach(tool => {
         toolsUsed+=`<div class="projects_tool">${tool}</div>`
     })
 
-    // Writing the project_item HTML
+    // Writing the project_item HTML element
     $(".projects_grid").append(
 
     `<div class="projects_item">     
@@ -62,7 +47,7 @@ jsonFile.forEach(item => {
             </div>
         </div>
 
-        <div class="projects_title">${item.title}</div>
+        <div class="projects_title">${title}</div>
         <div class="projects_tools">
             ${toolsUsed}
     </div>`  

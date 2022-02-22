@@ -1,6 +1,27 @@
 [
     {
-        "title": "Time Tracking Dashboard",
+        "title_en": "Travel Destinations",
+        "title_pt": "Destinos de Viagens",
+        "background": "./images/travel.png",
+        "liveSite": "https://travel-destinations-pytvbza8h-40fathoms.vercel.app/",
+        "repository": "https://github.com/40fathoms/travel-destinations",
+        
+        "tools": ["HTML", "CSS/SASS", "React"]
+    },
+    
+    {
+        "title_en": "Crowdfunding Product Page",
+        "title_pt": "Página de Financiamento Coletivo",
+        "background": "./images/crowdfunding.jpg",
+        "liveSite": "https://40fathoms.github.io/crowdfunding-product-page/",
+        "repository": "https://github.com/40fathoms/crowdfunding-product-page",
+        
+        "tools": ["HTML", "CSS/SASS", "JavaScript", "jQuery"]
+    },
+    
+    {
+        "title_en": "Time Tracking Dashboard",
+        "title_pt": "Painel de Rantreamento de Tempo",
         "background": "./images/timeTracking.jpg",
         "liveSite": "https://40fathoms.github.io/time-tracking-dashboard",
         "repository": "https://github.com/40fathoms/time-tracking-dashboard",
@@ -9,7 +30,8 @@
     },
 
     {
-        "title": "Insure Landing Page",
+        "title_en": "Insure Landing Page",
+        "title_pt": "Página de Entrada Insure",
         "background": "./images/insureLandingPage.jpg",
         "liveSite": "https://40fathoms.github.io/insure-landing-page",
         "repository": "https://github.com/40fathoms/insure-landing-page",
@@ -18,16 +40,18 @@
     },
 
     {
-        "title": "Loopstudios Landing Page",
+        "title_en": "Loopstudios Landing Page",
+        "title_pt": "Página de Entrada Loopstudios",
         "background": "./images/loopstudiosLandingPage.jpg",
-        "liveSite": "https://40fathoms.github.io/frontend-mentor-loopstudios-landing-page",
-        "repository": "https://github.com/40fathoms/frontend-mentor-loopstudios-landing-page",
+        "liveSite": "https://40fathoms.github.io/loopstudios-landing-page",
+        "repository": "https://github.com/40fathoms/loopstudios-landing-page",
         
         "tools": ["HTML", "CSS/SASS", "JavaScript"]
     },
 
     {
-        "title": "Nano Landing Page",
+        "title_en": "Nano Landing Page",
+        "title_pt": "Página de Entrada Nano",
         "background": "./images/productLanding.png",
         "liveSite": "https://40fathoms.github.io/fcc-product-landing-lage",
         "repository": "https://github.com/40fathoms/fcc-product-landing-lage",
@@ -36,7 +60,8 @@
     },
 
     {
-        "title": "Technical Documentation",
+        "title_en": "Technical Documentation",
+        "title_pt": "Documentação Técnica",
         "background": "./images/documentation.png",
         "liveSite": "https://40fathoms.github.io/fcc-HTML-technical-documentation",
         "repository": "https://github.com/40fathoms/fcc-HTML-technical-documentation",
@@ -45,7 +70,8 @@
     },
 
     {
-        "title": "Survey Form",
+        "title_en": "Survey Form",
+        "title_pt": "Formulário de Pesquisa",
         "background": "./images/survey.png",
         "liveSite": "https://40fathoms.github.io/fcc-survey-form",
         "repository": "https://github.com/40fathoms/fcc-survey-form",
@@ -54,7 +80,8 @@
     },
 
     {
-        "title": "Tribute Page",
+        "title_en": "Tribute Page",
+        "title_pt": "Página de Tributo",
         "background": "./images/tribute.png",
         "liveSite": "https://40fathoms.github.io/fcc-tribute-page",
         "repository": "https://github.com/40fathoms/fcc-tribute-page",
